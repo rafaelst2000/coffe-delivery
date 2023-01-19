@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
 export const HeaderContent = styled.header`
-  max-width: 74rem;
+  max-width: 76rem;
   margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

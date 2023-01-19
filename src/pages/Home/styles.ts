@@ -20,13 +20,18 @@ export const HomeContainer = styled.div`
     background-position: 50% 0;
     background-size: cover;
   }
+
+  @media (max-width: 768px) {
+    padding: 3.875rem 0 3.75rem;
+  }
 `
 
 export const HomeIntro = styled.section`
-  max-width: 74rem;
+  max-width: 76rem;
+  padding: 0 1rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 37rem  30rem;
+  grid-template-columns: minmax(200px, 1.5fr) 1fr;
   gap: 3.5rem;
   justify-content: space-between;
   
@@ -46,6 +51,20 @@ export const HomeIntro = styled.section`
     max-width: 100%;
     display: block;
   }
+  @media (max-width: 1366px) {
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 `
 
 export const HomeList = styled.ul`
@@ -53,19 +72,33 @@ export const HomeList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 1.5rem;
+
+  @media (max-width: 1366px) {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 890px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const HomeCoffeesContainer = styled.section`
-  padding: 2rem 0;
-  max-width: 74rem;
+  padding: 2rem 1rem;
+  max-width: 76rem;
   margin: 0 auto;
-`
-
-export const HomeCoffees = styled.div`
   & h2 {
+    margin-bottom: 3.125rem;
     font-size: 2rem;
     color: ${(props) => props.theme['base-subtitle']};
     line-height: 130%;
     font-weight: 800;
   }
+`
+
+export const HomeCoffees = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 `

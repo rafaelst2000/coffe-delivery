@@ -31,4 +31,11 @@ export const InfoListItem = styled.li<IconColorsProps>`
     color: ${(props) => props.theme['base-text']};
     font-size: 1rem;
   }
+
+  @media (max-width: 1366px) {
+    & div {
+      height: 1.7rem;
+      width: 1.7rem;
+    }
+  }
 `

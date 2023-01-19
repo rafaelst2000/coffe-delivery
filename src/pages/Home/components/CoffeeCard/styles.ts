@@ -6,9 +6,16 @@ export const CoffeCardContainer = styled.div`
   width: 16rem;
   padding: 1.25rem;
   text-align: center;
+  transition: 0.2s;
+
+  &:hover {
+    scale: 1.1;
+  }
 
   & img {
     margin-top: -2.25rem;
+    height: 6.25rem;
+    width: 6.25rem;
   }
 
   & ul {
@@ -47,5 +54,49 @@ export const CoffeCardContainer = styled.div`
     font-size: 0.875rem;
     line-height: 130%;
     margin-top: 0.5rem;
+  }
+`
+
+export const CardActions = styled.div `
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .action-item-side {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+`
+
+export const CardPrice = styled.div `
+  color: ${(props) => props.theme['base-text']};
+  font-size: 0.875rem;
+
+  & span {
+    font-family: 'Baloo 2' sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+`
+
+export const Cart = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  outline: 0;
+  transition: 0.2s;
+  background: ${(props) => props.theme['purple-dark']};
+  color: ${(props) => props.theme['white']};
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: ${(props) => props.theme['purple']};
   }
 `

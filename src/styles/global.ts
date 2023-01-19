@@ -34,4 +34,10 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme['base-title']};
     line-height: 130%;
   }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
 `

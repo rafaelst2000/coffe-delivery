@@ -1,7 +1,8 @@
 import { HomeContainer, HomeIntro, HomeList, HomeCoffees, HomeCoffeesContainer } from "./styles"
 import { HomeInfoListItem, ItemProps } from "./components/HomeInfoListItem"
-import imgCoffe from '../../assets/Imagem.png'
 import { CoffeCard } from "./components/CoffeeCard"
+import { coffess } from '../../helpers/coffees'
+import imgCoffe from '../../assets/Imagem.png'
 
 const items: ItemProps[] = [
   {
@@ -51,10 +52,9 @@ export function Home() {
         </HomeIntro>
       </HomeContainer>
       <HomeCoffeesContainer>
-        <HomeCoffees>
-          <h2>Nossos cafés</h2>
-
-          <CoffeCard />
+        <h2>Nossos cafés</h2>
+        <HomeCoffees>  
+          {coffess.map(coffee => <CoffeCard key={coffee.id} {...coffee} />)}
         </HomeCoffees>
       </HomeCoffeesContainer>
     </>
