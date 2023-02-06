@@ -1,26 +1,20 @@
 import styled from 'styled-components'
 import background from '../../assets/Background.svg'
-
+import { rgba } from "polished";
 
 export const HomeContainer = styled.div`
   padding: 5.875rem 0 6.75rem;
-  position: relative;
-
-  &:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background: url(${background});
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }
-
+  width: 100%;
+  height: 100%;
+  background: ${(props) => `url(${background}) no-repeat center,
+      linear-gradient(
+        0deg,
+        ${props.theme["white"]} 0%,
+        ${rgba(props.theme["background"], 0.2)} 50%,
+        ${props.theme["background"]} 100%
+      )`};
+  background-size: cover;
+  
   @media (max-width: 768px) {
     padding: 3.875rem 0 3.75rem;
   }

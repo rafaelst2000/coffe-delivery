@@ -8,10 +8,10 @@ import { defaultTheme } from './styles/themes/default'
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
       <BrowserRouter>
           <Router />
       </BrowserRouter>
-      <GlobalStyle />
     </ThemeProvider>
   )
 }
