@@ -1,6 +1,7 @@
 import { CoffeCardContainer,CardActions, CardPrice, Cart } from './styles'
 import { QuantityInput } from '../QuantityInput'
 import { ShoppingCart } from 'phosphor-react'
+import { formatMoney } from '../../../../helpers/formatMoney'
 export interface CoffeeCardProps {
   id: number
   description: string
@@ -11,6 +12,8 @@ export interface CoffeeCardProps {
 }
 
 export function CoffeCard({ description, img, name, price, tags }: CoffeeCardProps) {
+  const formattedPrice = formatMoney(price)
+
   return (
     <CoffeCardContainer>
       <img src={img} alt="" />
@@ -24,7 +27,7 @@ export function CoffeCard({ description, img, name, price, tags }: CoffeeCardPro
 
       <CardActions>
         <CardPrice>
-          R$ <span>{price}</span>
+          R$ <span>{formattedPrice}</span>
         </CardPrice>
         <div className="action-item-side">
           <QuantityInput />
