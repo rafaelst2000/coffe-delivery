@@ -2,13 +2,20 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
 export const HeaderContent = styled.header`
-  max-width: 76rem;
-  margin: 0 auto;
+  height: 6.5rem;
+  position: sticky;
+  top: 0;
   padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background: ${(props) => props.theme['background']};
 
+  > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 76rem;
+    margin: 0 auto;
+  }
   nav {
     display: flex;
     gap: 0.5rem;
