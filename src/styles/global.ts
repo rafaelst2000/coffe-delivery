@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   body {
     background: ${(props) => props.theme['background']};
     color: ${(props) => props.theme['base-text']};

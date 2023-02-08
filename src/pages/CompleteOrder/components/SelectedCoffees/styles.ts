@@ -19,3 +19,36 @@ export const DetailsContainer = styled(SectionBaseStyle)`
   display: flex;
   flex-direction: column;
 `
+
+export const ConfirmationSectionContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  > div:not(.total) {
+    p {
+      font-size: 0.875rem;
+      color: ${(props) => props.theme['base-text']};
+    }
+  }
+
+  > div.total {
+    p {
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: ${(props) => props.theme['base-subtitle']};
+    }
+  }
+
+  > button {
+    margin-top: 0.7rem;
+  }
+
+
+`
