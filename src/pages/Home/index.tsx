@@ -3,6 +3,7 @@ import { HomeInfoListItem, ItemProps } from "./components/HomeInfoListItem"
 import { CoffeCard } from "./components/CoffeeCard"
 import { coffess } from '../../helpers/coffees'
 import imgCoffe from '../../assets/Imagem.png'
+import { useCart } from "../../hooks/useCart"
 
 const items: ItemProps[] = [
   {
@@ -32,6 +33,7 @@ const items: ItemProps[] = [
 ]
 
 export function Home() {
+  const { cartItems } = useCart()
   return (
     <>
       <HomeContainer>
@@ -54,7 +56,7 @@ export function Home() {
       <HomeCoffeesContainer>
         <h2>Nossos cafés</h2>
         <HomeCoffees>  
-          {coffess.map(coffee => <CoffeCard key={coffee.id} {...coffee} />)}
+          {coffess.map(coffee => <CoffeCard key={coffee.id} coffee={coffee} />)}
         </HomeCoffees>
       </HomeCoffeesContainer>
     </>

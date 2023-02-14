@@ -13,10 +13,10 @@ import macchiato from '../assets/coffees/Macchiato.png'
 import mocaccino from '../assets/coffees/Mocaccino.png'
 import expressoAmericano from '../assets/coffees/ExpressoAmericano.png'
 
-import { CoffeeCardProps } from '../pages/Home/components/CoffeeCard'
+import { Coffee } from '../pages/Home/components/CoffeeCard'
 
 
-export const coffess: CoffeeCardProps[] = [
+export const coffess: Coffee[] = [
   {
     id: 1,
     name: "Expresso Tradicional",

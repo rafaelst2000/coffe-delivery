@@ -51,6 +51,23 @@ export const Cart = styled(BaseHeaderItem)`
   background: ${(props) => props.theme['yellow-light']};
   color: ${(props) => props.theme['yellow-dark']};
   text-decoration: none;
+  position: relative;
+
+  & span {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    top: calc(-1.25rem / 2);
+    right: calc(-1.25rem / 2);
+    color: ${(props) => props.theme['white']};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+    background: ${(props) => props.theme['yellow-dark']};
+  }
 
   &:visited {
     color: ${(props) => props.theme['yellow-dark']};
