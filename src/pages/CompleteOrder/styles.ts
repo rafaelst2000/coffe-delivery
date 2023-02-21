@@ -7,12 +7,12 @@ export const CompleteOrderContainer = styled.form `
   gap: 2rem;
   max-width: 76rem;
   padding: 0 1rem;
-  margin: 0 auto;
+  margin: 2.5rem auto 0;
 `
 
 export const SectionBaseStyle = styled.div`
   width: 100%;
-  background: ${(props) => props.theme['base-card']};
+  background: ${(props) => props.theme.colors['base-card']};
   border-radius: 6px;
   padding: 2.5rem;
 `

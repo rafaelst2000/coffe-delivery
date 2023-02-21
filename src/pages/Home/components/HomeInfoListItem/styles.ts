@@ -22,13 +22,13 @@ export const InfoListItem = styled.li<IconColorsProps>`
     justify-content: center;
     height: 2rem;
     width: 2rem;
-    color: ${(props) => props.theme['background']};
-    background: ${(props) => props.theme[ICON_COLORS[props.iconColor]]};;
+    color: ${(props) => props.theme.colors['background']};
+    background: ${(props) => props.theme.colors[ICON_COLORS[props.iconColor]]};;
     border-radius: 1000px;
   }
 
   & span {
-    color: ${(props) => props.theme['base-text']};
+    color: ${(props) => props.theme.colors['base-text']};
     font-size: 1rem;
   }
 

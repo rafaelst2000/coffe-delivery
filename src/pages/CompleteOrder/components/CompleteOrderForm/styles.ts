@@ -8,7 +8,7 @@ export const CompleteOrderFormContainer = styled.div `
   width: 40rem;
 
   & h1 {
-    color: ${(props) => props.theme['base-subtitle']};
+    color: ${(props) => props.theme.colors['base-subtitle']};
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 130%;
@@ -48,4 +48,11 @@ export const PaymentMethodOptionsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
+
+  > p {
+    color: ${(props) => props.theme.colors['error']};
+    font-size: 0.875rem;
+    font-weight: 400;
+    grid-column: span 3;
+  }
 `

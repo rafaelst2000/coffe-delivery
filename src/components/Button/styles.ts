@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
   padding: 0.75rem 2.8rem;
-  color: ${(props) => props.theme['white']};
+  color: ${(props) => props.theme.colors['white']};
   font-weight: 700;
-  background: ${(props) => props.theme['yellow']};
+  background: ${(props) => props.theme.colors['yellow']};
   font-size: 0.875rem;
   border: none;
   border-radius: 6px;
@@ -18,6 +18,6 @@ export const ButtonContainer = styled.button`
   }
 
   &:not(:disabled):hover {
-    background: ${(props) => props.theme['yellow-dark']};
+    background: ${(props) => props.theme.colors['yellow-dark']};
   }
 `

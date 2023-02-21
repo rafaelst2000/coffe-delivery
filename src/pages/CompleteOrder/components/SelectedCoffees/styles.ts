@@ -8,7 +8,7 @@ export const SelectedCoffeesContainer = styled.div`
   width: 40rem;
 
   & h1 {
-    color: ${(props) => props.theme['base-subtitle']};
+    color: ${(props) => props.theme.colors['base-subtitle']};
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 130%;
@@ -34,7 +34,7 @@ export const ConfirmationSectionContainer = styled.section`
   > div:not(.total) {
     p {
       font-size: 0.875rem;
-      color: ${(props) => props.theme['base-text']};
+      color: ${(props) => props.theme.colors['base-text']};
     }
   }
 
@@ -42,7 +42,7 @@ export const ConfirmationSectionContainer = styled.section`
     p {
       font-weight: bold;
       font-size: 1.25rem;
-      color: ${(props) => props.theme['base-subtitle']};
+      color: ${(props) => props.theme.colors['base-subtitle']};
     }
   }
 

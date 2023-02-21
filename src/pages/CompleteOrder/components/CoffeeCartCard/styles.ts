@@ -5,12 +5,12 @@ export const CoffeeCartCardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid ${(props) => props.theme['base-button']};
+  border-bottom: 1px solid ${(props) => props.theme.colors['base-button']};
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 
   h3 {
-    color: ${(props) => props.theme['base-subtitle']};
+    color: ${(props) => props.theme.colors['base-subtitle']};
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.3;
@@ -46,20 +46,20 @@ export const RemoveButton = styled.button`
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  color: ${(props) => props.theme['base-text']};
+  color: ${(props) => props.theme.colors['base-text']};
   font-size: 0.75rem;
   border: none;
-  background: ${(props) => props.theme['base-button']};
+  background: ${(props) => props.theme.colors['base-button']};
   padding: 0 0.5rem;
   border-radius: 6px;
   transition: 0.4s;
   height: 100%;
 
   svg {
-    color: ${(props) => props.theme['purple']};
+    color: ${(props) => props.theme.colors['purple']};
   }
 
   &:hover {
-    background: ${(props) => props.theme['base-hover']};
+    background: ${(props) => props.theme.colors['base-hover']};
   }
 `

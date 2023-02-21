@@ -16,8 +16,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme['background']};
-    color: ${(props) => props.theme['base-text']};
+    background: ${(props) => props.theme.colors['background']};
+    color: ${(props) => props.theme.colors['base-text']};
     -webkit-font-smoothing: antialiased;
   }
 
@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 { 
     font-family: 'Baloo 2', sans-serif;
-    color: ${(props) => props.theme['base-title']};
+    color: ${(props) => props.theme.colors['base-title']};
     line-height: 130%;
   }
 

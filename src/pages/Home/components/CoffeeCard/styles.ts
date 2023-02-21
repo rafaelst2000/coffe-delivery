@@ -1,16 +1,12 @@
 import styled from 'styled-components'
 
 export const CoffeCardContainer = styled.div`
-  background-color: ${(props) => props.theme['base-card']};
+  background-color: ${(props) => props.theme.colors['base-card']};
   border-radius: 6px 36px;
   width: 16rem;
   padding: 1.25rem;
   text-align: center;
   transition: 0.2s;
-
-  &:hover {
-    scale: 1.1;
-  }
 
   & img {
     margin-top: -2.25rem;
@@ -30,8 +26,8 @@ export const CoffeCardContainer = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      color: ${(props) => props.theme['yellow-dark']};
-      background: ${(props) => props.theme['yellow-light']};
+      color: ${(props) => props.theme.colors['yellow-dark']};
+      background: ${(props) => props.theme.colors['yellow-light']};
       text-transform: uppercase;
       font-weight: 700;
       line-height: 1;
@@ -46,11 +42,11 @@ export const CoffeCardContainer = styled.div`
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 130%;
-    color: ${(props) => props.theme['base-subtitle']};
+    color: ${(props) => props.theme.colors['base-subtitle']};
   }
 
   & p {
-    color: ${(props) => props.theme['base-label']};
+    color: ${(props) => props.theme.colors['base-label']};
     font-size: 0.875rem;
     line-height: 130%;
     margin-top: 0.5rem;
@@ -71,7 +67,7 @@ export const CardActions = styled.div `
 `
 
 export const CardPrice = styled.div `
-  color: ${(props) => props.theme['base-text']};
+  color: ${(props) => props.theme.colors['base-text']};
   font-size: 0.875rem;
 
   & span {
@@ -90,13 +86,13 @@ export const Cart = styled.button`
   border-radius: 6px;
   outline: 0;
   transition: 0.2s;
-  background: ${(props) => props.theme['purple-dark']};
-  color: ${(props) => props.theme['white']};
+  background: ${(props) => props.theme.colors['purple-dark']};
+  color: ${(props) => props.theme.colors['white']};
   text-decoration: none;
   border: 0;
   cursor: pointer;
 
   &:hover {
-    background: ${(props) => props.theme['purple']};
+    background: ${(props) => props.theme.colors['purple']};
   }
 `

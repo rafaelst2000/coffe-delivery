@@ -6,7 +6,7 @@ export const HeaderContent = styled.header`
   position: sticky;
   top: 0;
   padding: 0 1rem;
-  background: ${(props) => props.theme['background']};
+  background: ${(props) => props.theme.colors['background']};
 
   > div {
     display: flex;
@@ -34,22 +34,22 @@ export const BaseHeaderItem = styled(Link)`
 `
 
 export const Location = styled(BaseHeaderItem)`
-  background: ${(props) => props.theme['purple-light']};
-  color: ${(props) => props.theme['purple-dark']};
+  background: ${(props) => props.theme.colors['purple-light']};
+  color: ${(props) => props.theme.colors['purple-dark']};
   text-decoration: none;
 
   &:visited {
-    color: ${(props) => props.theme['purple-dark']};
+    color: ${(props) => props.theme.colors['purple-dark']};
   }
 
   &:hover {
-    box-shadow: 0 0 0 2px ${(props) => props.theme['purple-dark']}
+    box-shadow: 0 0 0 2px ${(props) => props.theme.colors['purple-dark']}
   }
 `
 
 export const Cart = styled(BaseHeaderItem)`
-  background: ${(props) => props.theme['yellow-light']};
-  color: ${(props) => props.theme['yellow-dark']};
+  background: ${(props) => props.theme.colors['yellow-light']};
+  color: ${(props) => props.theme.colors['yellow-dark']};
   text-decoration: none;
   position: relative;
 
@@ -60,20 +60,20 @@ export const Cart = styled(BaseHeaderItem)`
     border-radius: 50%;
     top: calc(-1.25rem / 2);
     right: calc(-1.25rem / 2);
-    color: ${(props) => props.theme['white']};
+    color: ${(props) => props.theme.colors['white']};
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
     font-size: 0.75rem;
-    background: ${(props) => props.theme['yellow-dark']};
+    background: ${(props) => props.theme.colors['yellow-dark']};
   }
 
   &:visited {
-    color: ${(props) => props.theme['yellow-dark']};
+    color: ${(props) => props.theme.colors['yellow-dark']};
   }
 
   &:hover {
-    box-shadow: 0 0 0 2px ${(props) => props.theme['yellow-dark']}
+    box-shadow: 0 0 0 2px ${(props) => props.theme.colors['yellow-dark']}
   }
 `

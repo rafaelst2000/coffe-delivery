@@ -9,9 +9,9 @@ export const HomeContainer = styled.div`
   background: ${(props) => `url(${background}) no-repeat center,
       linear-gradient(
         0deg,
-        ${props.theme["white"]} 0%,
-        ${rgba(props.theme["background"], 0.2)} 50%,
-        ${props.theme["background"]} 100%
+        ${props.theme.colors["white"]} 0%,
+        ${rgba(props.theme.colors["background"], 0.2)} 50%,
+        ${props.theme.colors["background"]} 100%
       )`};
   background-size: cover;
   
@@ -37,7 +37,7 @@ export const HomeIntro = styled.section`
   & p {
     margin-top: 1rem;
     font-size: 1.25rem;
-    color: ${(props) => props.theme['base-subtitle']};
+    color: ${(props) => props.theme.colors['base-subtitle']};
     line-height: 130%;
   }
 
@@ -83,7 +83,7 @@ export const HomeCoffeesContainer = styled.section`
   & h2 {
     margin-bottom: 3.125rem;
     font-size: 2rem;
-    color: ${(props) => props.theme['base-subtitle']};
+    color: ${(props) => props.theme.colors['base-subtitle']};
     line-height: 130%;
     font-weight: 800;
   }
