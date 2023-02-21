@@ -4,6 +4,7 @@ import { Router } from './Router'
 
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
+import { darkTheme } from './styles/themes/dark'
 import { CartContextProvider } from './context/CartContext'
 
 export function App() {
