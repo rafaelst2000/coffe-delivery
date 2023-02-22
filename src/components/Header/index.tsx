@@ -20,10 +20,10 @@ export function Header() {
           <img src={'Logo.svg'} alt="" />
         </NavLink>
         <nav>
-          <ToggleTheme to="/" onClick={handleChangeTheme}>
+          <ToggleTheme onClick={handleChangeTheme}>
             {isDarkTheme ? <Moon size={24} />  : <Sun size={24} /> }
           </ToggleTheme>
-          <Location to="/">
+          <Location>
             <MapPin size={24} />
             São Jerônimo, RS
           </Location>
