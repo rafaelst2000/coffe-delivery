@@ -2,7 +2,6 @@ import { HomeContainer, HomeIntro, HomeList, HomeCoffees, HomeCoffeesContainer }
 import { HomeInfoListItem, ItemProps } from "./components/HomeInfoListItem"
 import { CoffeCard } from "./components/CoffeeCard"
 import { coffess } from '../../helpers/coffees'
-import imgCoffe from '../../assets/Imagem.png'
 import { useDarkTheme } from "../../hooks/useDarkTheme"
 
 const items: ItemProps[] = [
@@ -51,7 +50,7 @@ export function Home() {
               }
             </HomeList>
           </div>
-          <img src={imgCoffe} />
+          <img src={'Imagem.png'} />
         </HomeIntro>
       </HomeContainer>
       <HomeCoffeesContainer>

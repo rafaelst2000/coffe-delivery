@@ -2,7 +2,6 @@ import { Location, Cart, HeaderContent, ToggleTheme } from './styles'
 import { MapPin, ShoppingCart, Sun, Moon } from 'phosphor-react'
 import { NavLink } from 'react-router-dom'
 
-import logo from '../../assets/logo.svg'
 import { useCart } from '../../hooks/useCart'
 import { useDarkTheme } from '../../hooks/useDarkTheme'
 
@@ -18,7 +17,7 @@ export function Header() {
     <HeaderContent>
       <div>
         <NavLink to="/">
-          <img src={logo} alt="" />
+          <img src={'Logo.svg'} alt="" />
         </NavLink>
         <nav>
           <ToggleTheme to="/" onClick={handleChangeTheme}>

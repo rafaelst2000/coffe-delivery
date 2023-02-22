@@ -1,18 +1,3 @@
-import americano from '../assets/coffees/Americano.png'
-import arabe from '../assets/coffees/Arabe.png'
-import expressoGelado from '../assets/coffees/CafeGelado.png'
-import cafeLeite from '../assets/coffees/cafeLeite.png'
-import capuccino from '../assets/coffees/Capuccino.png'
-import chocolateQuente from '../assets/coffees/chocolateQuente.png'
-import cubano from '../assets/coffees/Cubano.png'
-import expressoCremoso from '../assets/coffees/ExpressoCremoso.png'
-import havaiano from '../assets/coffees/Havaiano.png'
-import irlandes from '../assets/coffees/Irlandes.png'
-import latte from '../assets/coffees/Latte.png'
-import macchiato from '../assets/coffees/Macchiato.png'
-import mocaccino from '../assets/coffees/Mocaccino.png'
-import expressoAmericano from '../assets/coffees/ExpressoAmericano.png'
-
 import { Coffee } from '../pages/Home/components/CoffeeCard'
 
 
@@ -23,7 +8,7 @@ export const coffess: Coffee[] = [
     price: 4.5,
     description: "O tradicional café feito com água quente e grãos moídos",
     tags: ["expresso", "tradicional"],
-    img: americano
+    img: '/coffees/Americano.png'
   },
   {
     id: 2,
@@ -31,7 +16,7 @@ export const coffess: Coffee[] = [
     price: 5.0,
     description: "Expresso diluído, menos intenso que o tradicional",
     tags: ["expresso", "americano"],
-    img: expressoAmericano
+    img: '/coffees/ExpressoAmericano.png'
   },
   {
     id: 3,
@@ -39,7 +24,7 @@ export const coffess: Coffee[] = [
     price: 5.5,
     description: "Café expresso tradicional com espuma cremosa",
     tags: ["expresso", "cremoso"],
-    img: expressoCremoso
+    img: '/coffees/ExpressoCremoso.png'
   },
   {
     id: 4,
@@ -47,7 +32,7 @@ export const coffess: Coffee[] = [
     price: 6.0,
     description: "Bebida preparada com café expresso e cubos de gelo",
     tags: ["expresso", "gelado"],
-    img: expressoGelado
+    img: '/coffees/CafeGelado.png',
   },
   {
     id: 5,
@@ -55,7 +40,7 @@ export const coffess: Coffee[] = [
     price: 4.0,
     description: "Meio a meio de expresso tradicional com leite vaporizado",
     tags: ["café", "leite"],
-    img: cafeLeite
+    img: '/coffees/CafeLeite.png'
   },
   {
     id: 6,
@@ -63,7 +48,7 @@ export const coffess: Coffee[] = [
     price: 6.0,
     description: "Uma dose de café expresso com o dobro de leite e espuma cremosa",
     tags: ["latte", "cremoso"],
-    img: latte
+    img: '/coffees/Latte.png'
   },
   {
     id: 7,
@@ -71,7 +56,7 @@ export const coffess: Coffee[] = [
     price: 6.5,
     description: "Bebida com canela feita de doses iguais de café, leite e espuma",
     tags: ["capuccino", "cremoso"],
-    img: capuccino
+    img: '/coffees/Capuccino.png'
   },
   {
     id: 8,
@@ -79,7 +64,7 @@ export const coffess: Coffee[] = [
     price: 6.0,
     description: "Café expresso misturado com um pouco de leite quente e espuma",
     tags: ["macchiato", "cremoso"],
-    img: macchiato
+    img: '/coffees/Macchiato.png'
   },
   {
     id: 9,
@@ -87,7 +72,7 @@ export const coffess: Coffee[] = [
     price: 6.5,
     description: "Café expresso com calda de chocolate, pouco leite e espuma",
     tags: ["mocaccino", "cremoso", "chocolate"],
-    img: mocaccino
+    img: '/coffees/Mocaccino.png'
   },
   {
     id: 10,
@@ -95,7 +80,7 @@ export const coffess: Coffee[] = [
     price: 4.5,
     description: "Bebida feita com chocolate dissolvido no leite quente e café",
     tags: ["chocolate", "quente"],
-    img: chocolateQuente
+    img: '/coffees/ChocolateQuente.png'
   },
   {
     id: 11,
@@ -103,7 +88,7 @@ export const coffess: Coffee[] = [
     price: 4.5,
     description: "Drink gelado de café expresso com rum, creme de leite e hortelã",
     tags: ["especial", "alcoólico", "gelado"],
-    img: cubano
+    img: '/coffees/Cubano.png'
   },
   {
     id: 12,
@@ -111,7 +96,7 @@ export const coffess: Coffee[] = [
     price: 5.5,
     description: "Bebida adocicada preparada com café e leite de coco",
     tags: ["especial"],
-    img: havaiano
+    img: '/coffees/Havaiano.png'
   },
   {
     id: 13,
@@ -119,7 +104,7 @@ export const coffess: Coffee[] = [
     price: 4.5,
     description: "Bebida preparada com grãos de café árabe e especiarias",
     tags: ["especial"],
-    img: arabe
+    img: '/coffees/Arabe.png',
   },
   {
     id: 14,
@@ -127,6 +112,6 @@ export const coffess: Coffee[] = [
     price: 4.5,
     description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",
     tags: ["especial", "alcoólico"],
-    img: irlandes
+    img: '/coffees/Irlandes.png'
   },
 ]

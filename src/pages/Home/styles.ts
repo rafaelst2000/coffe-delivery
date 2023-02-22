@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import background from '../../assets/Background.svg'
 import { rgba } from "polished";
 
 interface HomeContainerProps {
@@ -10,7 +9,7 @@ export const HomeContainer = styled.div<HomeContainerProps>`
   padding: 5.875rem 0 6.75rem;
   width: 100%;
   height: 100%;
-  background: ${(props) => `url(${background}) no-repeat center,
+  background: ${(props) => `url('Background.svg') no-repeat center,
       linear-gradient(
         0deg,
         ${props.theme.colors["white"]} 0%,
@@ -20,7 +19,7 @@ export const HomeContainer = styled.div<HomeContainerProps>`
   background-size: cover;
 
   ${(props) => props.isDarkTheme && css`
-    background: ${(props) => `url(${background}) no-repeat center,
+    background: ${(props) => `url('Background.svg') no-repeat center,
         linear-gradient(
           0deg,   
           ${rgba(props.theme.colors["background"], 0.2)} 50%,

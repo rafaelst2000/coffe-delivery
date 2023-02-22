@@ -1,6 +1,5 @@
 import { OrderConfirmedContainer, OrderDetailsContainer } from "./styles";
 
-import imgCofirmedOrder from '../../assets/Illustration.svg'
 import { useLocation, useNavigate } from "react-router-dom";
 import { OrderData } from "../CompleteOrder";
 import { Clock, CurrencyDollar, MapPin } from "phosphor-react";
@@ -62,7 +61,7 @@ export function OrderConfirmed() {
             }
           />
         </OrderDetailsContainer>
-        <img src={imgCofirmedOrder} />
+        <img src={'Illustration.svg'} />
       </section>
     </OrderConfirmedContainer>
   )
