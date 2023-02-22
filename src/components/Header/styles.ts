@@ -34,21 +34,6 @@ export const BaseHeaderItem = styled(Link)`
   transition: 0.2s;
 `
 
-export const Location = styled(BaseHeaderItem)`
-  background: ${(props) => props.theme.colors['purple-light']};
-  color: ${(props) => props.theme.colors['purple-dark']};
-  text-decoration: none;
-  cursor: default;
-
-  &:visited {
-    color: ${(props) => props.theme.colors['purple-dark']};
-  }
-
-  &:hover {
-    box-shadow: none;
-  }
-`
-
 export const Cart = styled(BaseHeaderItem)`
   background: ${(props) => props.theme.colors['yellow-light']};
   color: ${(props) => props.theme.colors['yellow-dark']};
@@ -80,5 +65,41 @@ export const Cart = styled(BaseHeaderItem)`
   }
 `
 
-export const ToggleTheme = styled(Cart)`
+const BaseButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  transition: 0.2s;
+
+  text-decoration: none;
+  position: relative;
+`
+
+export const ToggleTheme = styled(BaseButton)`
+  background: ${(props) => props.theme.colors['yellow-light']};
+  color: ${(props) => props.theme.colors['yellow-dark']};
+
+  &:hover {
+    box-shadow: 0 0 0 2px ${(props) => props.theme.colors['yellow-dark']}
+  }
+`
+
+export const Location = styled(BaseButton)`
+  background: ${(props) => props.theme.colors['purple-light']};
+  color: ${(props) => props.theme.colors['purple-dark']};
+  text-decoration: none;
+  cursor: default;
+
+  &:visited {
+    color: ${(props) => props.theme.colors['purple-dark']};
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
 `
