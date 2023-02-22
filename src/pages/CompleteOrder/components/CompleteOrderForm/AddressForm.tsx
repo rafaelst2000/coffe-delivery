@@ -16,13 +16,13 @@ export function AddressForm() {
 
   return (
     <AddressFormContainer>
-      <Input placeholder="CEP" className="cep" type="number" {...register('cep')} error={errors.cep?.message} />
+      <Input mask={'99999-999'} placeholder="CEP" className="cep" type="tel" {...register('cep')} error={errors.cep?.message} />
       <Input placeholder="Rua" className="street" {...register('street')} error={errors.street?.message} />
-      <Input placeholder="Número" type="number" {...register('number')} error={errors.number?.message} />
+      <Input placeholder="Número" type="tel" {...register('number')} error={errors.number?.message} />
       <Input placeholder="Complemento" className="complement" {...register('complement')} rightText="Opcional" />
       <Input placeholder="Bairro" {...register('district')} error={errors.district?.message} />
       <Input placeholder="Cidade" {...register('city')} error={errors.city?.message} />
-      <Input placeholder="UF" {...register('uf')} error={errors.uf?.message} />
+      <Input mask={'aa'} placeholder="UF" {...register('uf')} error={errors.uf?.message} />
     </AddressFormContainer>
   )
 }
