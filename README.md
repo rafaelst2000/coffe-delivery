@@ -4,7 +4,7 @@
   
 &nbsp;
 
-![Node_Badge][node_version_badge] ![Npm_Badge][yarn_version_badge] ![vue_Badge][vue_badge] ![NodeJS_Badge][server_firebase_badge] ![Pinia_Badge][pinia_badge] ![Vite_Badge][vite_badge]
+![Node_Badge][node_version_badge] ![Npm_Badge][yarn_version_badge] ![react_Badge][react_badge] ![NodeJS_Badge][typescript] ![styled][styled] ![Vite_Badge][vite_badge]
 
 </div>
 
@@ -82,14 +82,14 @@ Siga as etapas seguintes para instalar e executar o projeto:
 
 <!-- Badges -->
 
-[node_version_badge]: https://img.shields.io/badge/Node-12.20.0-green
+[node_version_badge]: https://img.shields.io/badge/Node-16.17.1-green
 
-[yarn_version_badge]: https://img.shields.io/badge/Yarn-1.22.17-red
+[yarn_version_badge]: https://img.shields.io/badge/Yarn-1.22.19-red
 
-[vue_badge]: https://img.shields.io/badge/Web-VueJS-green
+[react_badge]: https://img.shields.io/badge/Web-React-blue
 
-[server_firebase_badge]: https://img.shields.io/badge/Server-Firebase-important
+[typescript]: https://img.shields.io/badge/TS-Typescript-blue
 
-[pinia_badge]: https://img.shields.io/badge/Store-Pinia-yellow
+[styled]: https://img.shields.io/badge/CSS-StyledComponents-yellow
 
 [vite_badge]: https://img.shields.io/badge/Bundle-Vite-purple
