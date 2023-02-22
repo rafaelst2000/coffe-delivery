@@ -7,6 +7,7 @@ export const HeaderContent = styled.header`
   top: 0;
   padding: 0 1rem;
   background: ${(props) => props.theme.colors['background']};
+  z-index: 999;
 
   > div {
     display: flex;

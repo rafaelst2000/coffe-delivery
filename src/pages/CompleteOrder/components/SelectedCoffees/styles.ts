@@ -6,12 +6,17 @@ export const SelectedCoffeesContainer = styled.div`
   flex-direction: column;
   gap: 0.75rem;
   width: 40rem;
-
+  
   & h1 {
     color: ${(props) => props.theme.colors['base-subtitle']};
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 130%;
+  }
+  
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 100%;
   }
 `
 export const DetailsContainer = styled(SectionBaseStyle)`

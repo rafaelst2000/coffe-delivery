@@ -13,6 +13,11 @@ export const CompleteOrderFormContainer = styled.div `
     font-size: 1.125rem;
     line-height: 130%;
   }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 export const FormSectionContainer = styled(SectionBaseStyle)`
@@ -41,6 +46,15 @@ export const AddressFormContainer = styled.div`
   .complement {
     grid-column: span 2;
   }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+
+    .cep, .street, .complement {
+      grid-column: unset;
+      max-width: 100%;
+    }
+  }
 `
 
 export const PaymentMethodOptionsContainer = styled.div`
@@ -54,5 +68,15 @@ export const PaymentMethodOptionsContainer = styled.div`
     font-size: 0.875rem;
     font-weight: 400;
     grid-column: span 3;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    > p {
+      margin-top: 0.5rem;
+      grid-column: unset;
+    }
   }
 `

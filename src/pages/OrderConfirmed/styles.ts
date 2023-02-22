@@ -22,10 +22,28 @@ export const OrderConfirmedContainer = styled.div`
     }
   }
 
+  @media (max-width: 1140px) {
+    > div {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      max-width: 100%;
+    }
+  }
+
   > section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1140px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 `
 
@@ -45,5 +63,9 @@ export const OrderDetailsContainer = styled.div`
     z-index: -1;
     border-radius: 7px 37px;
     background: linear-gradient(102.89deg, #DBAC2C 2.61%, #8047F8 98.86%);
+  }
+
+  @media (max-width: 600px) {
+    min-width: 100%;
   }
 `
