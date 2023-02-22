@@ -14,7 +14,7 @@ export function App() {
       <BrowserRouter>
         <CartContextProvider>
             <Router />
-        </CartContextProvider>y
+        </CartContextProvider>
       </BrowserRouter>
     </ThemeProvider>
   )
