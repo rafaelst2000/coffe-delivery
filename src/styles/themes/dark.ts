@@ -2,19 +2,19 @@ export const darkTheme = {
   colors: {
     white: "#FFF",
     background: "#262424",
-    'base-card': "#494450",
-    'base-input': "#EDEDED",
-    'base-button': "#1E1529",
-    'base-hover': "#D6D5D7",
+    'base-card': "#403937",
+    'base-input': "#574F4D",
+    'base-button': "#574F4D",
+    'base-hover': "#D7D5D5",
 
-    'base-title': "#FDFDFD",
-    'base-subtitle': "#CCC1D0",
-    'base-label': "#B6A5C3",
-    'base-text': "#CFBEDA",
+    'base-title': "#FAFAFA",
+    'base-subtitle': "#E6E5E5",
+    'base-label': "#F3F2F2",
+    'base-text': "#EDEDED",
 
     'purple': "#8047F8",
     'purple-light': "#EBE5F9",
-    'purple-dark': "#5F2EEA",
+    'purple-dark': "#4B2995",
 
     'yellow': "#DBAC2C",
     'yellow-light': "#F1E9C9",
