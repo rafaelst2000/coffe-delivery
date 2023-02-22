@@ -9,12 +9,12 @@ import { CartContextProvider } from './context/CartContext'
 
 export function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
       <BrowserRouter>
         <CartContextProvider>
             <Router />
-        </CartContextProvider>
+        </CartContextProvider>y
       </BrowserRouter>
     </ThemeProvider>
   )

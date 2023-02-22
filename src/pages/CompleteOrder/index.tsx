@@ -17,7 +17,7 @@ const confirmOrderFormValidationSchema = zod.object({
   cep: zod.string().min(1, 'Informe o CEP'),
   street: zod.string().min(1, 'Informe a rua'),
   number: zod.string().min(1, 'Informe o número'),
-  district: zod.string().min(1, 'Informea o bairro'),
+  district: zod.string().min(1, 'Informe a o bairro'),
   city: zod.string().min(1, 'Informe a cidade'),
   uf: zod.string().min(1, 'Informe a UF'),
   paymentMethod: zod.nativeEnum(PaymentMethods, {
