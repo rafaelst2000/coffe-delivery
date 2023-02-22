@@ -3,7 +3,7 @@ import { HomeInfoListItem, ItemProps } from "./components/HomeInfoListItem"
 import { CoffeCard } from "./components/CoffeeCard"
 import { coffess } from '../../helpers/coffees'
 import imgCoffe from '../../assets/Imagem.png'
-import { useCart } from "../../hooks/useCart"
+import { useDarkTheme } from "../../hooks/useDarkTheme"
 
 const items: ItemProps[] = [
   {
@@ -33,10 +33,11 @@ const items: ItemProps[] = [
 ]
 
 export function Home() {
-  const { cartItems } = useCart()
+  const { isDarkTheme } = useDarkTheme()
+
   return (
     <>
-      <HomeContainer>
+      <HomeContainer isDarkTheme={isDarkTheme}>
         <HomeIntro>
           <div>
             <h1>Encontre o café perfeito para qualquer hora do dia</h1>

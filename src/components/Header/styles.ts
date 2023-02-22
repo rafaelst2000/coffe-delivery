@@ -37,13 +37,14 @@ export const Location = styled(BaseHeaderItem)`
   background: ${(props) => props.theme.colors['purple-light']};
   color: ${(props) => props.theme.colors['purple-dark']};
   text-decoration: none;
+  cursor: default;
 
   &:visited {
     color: ${(props) => props.theme.colors['purple-dark']};
   }
 
   &:hover {
-    box-shadow: 0 0 0 2px ${(props) => props.theme.colors['purple-dark']}
+    box-shadow: none;
   }
 `
 
@@ -76,4 +77,7 @@ export const Cart = styled(BaseHeaderItem)`
   &:hover {
     box-shadow: 0 0 0 2px ${(props) => props.theme.colors['yellow-dark']}
   }
+`
+
+export const ToggleTheme = styled(Cart)`
 `

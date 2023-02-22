@@ -1,8 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import background from '../../assets/Background.svg'
 import { rgba } from "polished";
 
-export const HomeContainer = styled.div`
+interface HomeContainerProps {
+  isDarkTheme: boolean
+}
+
+export const HomeContainer = styled.div<HomeContainerProps>`
   padding: 5.875rem 0 6.75rem;
   width: 100%;
   height: 100%;
@@ -14,6 +18,17 @@ export const HomeContainer = styled.div`
         ${props.theme.colors["background"]} 100%
       )`};
   background-size: cover;
+
+  ${(props) => props.isDarkTheme && css`
+    background: ${(props) => `url(${background}) no-repeat center,
+        linear-gradient(
+          0deg,   
+          ${rgba(props.theme.colors["background"], 0.2)} 50%,
+          ${props.theme.colors["background"]} 100%
+        )`};
+    background-size: cover;    
+    `
+  }
   
   @media (max-width: 768px) {
     padding: 3.875rem 0 3.75rem;
